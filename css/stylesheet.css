@@ -227,7 +227,7 @@ table{
 @media all and (max-width:800px){
     .bookmark{
         width: 95%;
-        background-color: transparent;
+        background-color: transparent !important;
     }
     .container{
         width: 90% !important;
