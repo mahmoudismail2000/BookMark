@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Mark</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/bookmarker.png" type="image/x-icon">
+
+    
+  </head>
+  <body>
+    <section class="text-center">
+      
+        <div class="h1Div position-absolute">
+            <h1 class="position-relative z-3">Bookmarker</h1>
+            <div class="book w-100 position-absolute z-1">
+            </div>
+         </div>
+     
+
+
+      
+      <div class="container">
+        
+        <div class="bookmark mt-4 mb-5 d-flex justify-content-center position-absolute">
+          <i class="fa-solid fa-bookmark me-2"></i>
+          <h2>Bookmark your favorite sites</h2>
+          <i class="fa-solid fa-bookmark ms-2"></i>
+        </div>
+        <div class="bookmarkInput d-flex flex-column align-items-start px-3 pt-5 mt-4">
+          <label for="siteNameInput" class="mt-2">
+            <i class="fa-solid fa-book-bookmark pe-2"></i>
+            Site Name
+          </label>
+         <div class="siteName w-100 position-relative">
+            <i class="fa-solid fa-check position-absolute icon1" id="siteIcon" ></i>
+            <i class="fa-solid fa-circle-exclamation position-absolute icon2" id="siteIconError"></i>
+           
+            
+            <input type="text" onkeyup="validateSiteName()" id="siteNameInput" class="form-control mb-3" placeholder="Bookmark Name"/>
+         </div>
+          <label for="siteUrlInput" class="mt-2">
+            <i class="fa-solid fa-link pe-2"></i>
+            Site URL
+          </label>
+          <div class="siteUrl w-100 position-relative">
+            <i class="fa-solid fa-check position-absolute icon1" id="siteIcon2" ></i>
+            <i class="fa-solid fa-circle-exclamation position-absolute icon2" id="siteIconError2"></i>
+            <input type="text" onkeyup=" validateSiteUrl()" id="siteUrlInput" class="form-control" placeholder="Website URL"/>
+          </div>
+          <div class="submitBtn m-auto position-relative">
+            <button class="btn my-4 text-white fs-5 submit position-absolute translate-middle-x" onclick="bookmarkStore()" id="btnSubmit">Submit</button>
+            <button class="btn btn-primary position-absolute my-4 text-white fs-5 translate-middle-x btnError" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" id="btnError">Submit</button>
+          </div>
+        </div>
+        
+
+        
+        
+
+      </div>
+      <table class="table table-dark table-striped">
+        <thead class="text-center">
+            <th>Index</th>
+            <th>Website Name</th>
+            <th>Visit</th>
+            <th>Delete</th>
+        </thead>
+        <tbody id="tbodyInput">
+            
+
+        </tbody>
+
+    </table>
+    </section>
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content p-2">
+            <div class="modal-header mt-3">
+              <h1 class="modal-title fs-5 d-flex" id="exampleModalToggleLabel">
+                <div class="modalDiv">
+
+                </div>
+                <div class="modalDiv1 mx-2">
+
+                </div>
+                <div class="modalDiv2">
+
+                </div>
+
+              </h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Site Name or Url is not valid, Please follow the rules below :</p>
+                <div class="detailsModal">
+                    <i class="fa-solid fa-circle-arrow-right px-2"></i>
+                    Site name must contain at least 3 characters
+
+                </div>
+                <div class="detailsModal my-3">
+                    <i class="fa-solid fa-circle-arrow-right px-2"></i>
+                    Site URL must be a valid one
+
+                </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+     
+      
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

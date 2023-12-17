@@ -1,0 +1,233 @@
+/* font-family: 'Pacifico', cursive; */
+/* font-family: 'Righteous', sans-serif; */
+/* font-family: 'PT Sans Caption', sans-serif; */
+body{
+    box-sizing: border-box;
+    background-color: #F7ECDE;
+}
+section{
+    
+    height: 100vh;
+    padding-top: 180px;
+    
+    
+}
+
+.h1Div{
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%,-50%);    
+}
+
+.book{
+    background-color: #FEC260;
+    height: 30%;
+    bottom: 8px;
+    transition: all .4s;
+    
+
+}
+.h1Div:hover .book{
+    height: 60%;
+}
+
+h1{
+    font-family:'Pacifico', cursive;
+    font-size: 50px;
+    color: #352E28;
+    font-weight: 500;
+
+}
+
+h2{
+    font-size: 25px !important;
+}
+
+hr{
+    border-top: 3px dotted black;
+    width: 100%;
+    margin: auto;
+
+}
+.bookmark i{
+    font-size: 25px;
+    padding: 2px 0px;
+    
+
+}
+.bookmark{
+    font-family:'Righteous', sans-serif;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    color: transparent;
+    left: 50%;
+    transform: translate(-50%);
+    background-clip: text;
+    font-size: 25px !important;
+    
+}
+
+label{
+    font-size: 16px;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: 600;
+    padding:
+0px 0px 8px
+}
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #d99c39;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+.submit{
+    background-color: #d1512d !important;
+    padding: 6px 48px !important;
+    z-index: 1;
+    
+    
+    
+}
+.submit:hover{
+    background-color: #BB4120 !important;
+    border: 1px solid rgb(100, 8, 8) !important;
+}
+tbody .visit{
+    background-color: #9eb23b !important ;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 7px 15px !important;
+
+}
+tbody .visit:hover{
+    background-color:#8a9e23 !important;
+    color: white;
+
+
+}
+tbody .delete{
+    background-color:#eb1d36 ;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 7px 15px;
+}
+tbody .delete:hover{
+    background-color:#8a9e23 ;
+    color: white;
+    border: 1px solid rgb(100, 8, 8) !important;
+    
+}
+table{
+    font-family: 'PT Sans Caption', sans-serif;
+
+    font-weight: 700;
+}
+
+.icon1{
+    right: 15px;
+    font-size: 25px;
+    top: 10px;
+    color: #3ca55c;
+    opacity: 0;
+}
+.icon2{
+    right:15px;
+    font-size: 20px;
+    top: 12px;
+    color: rgb(219, 28, 28);
+    opacity: 0;
+    
+    
+}
+
+.modalDiv{
+    width: 20px;
+    height: 20px;
+    background-color: #F15F5D;
+    border-radius: 50%;
+
+}
+.modalDiv1{
+    width: 20px;
+    height: 20px;
+    background-color: #FEBE2E;
+    border-radius: 50%;
+
+}
+
+.modalDiv2{
+    width: 20px;
+    height: 20px;
+    background-color: #4DB748;
+    border-radius: 50%;
+
+}
+.modal-body{
+    font-family: 'Bree Serif', serif;
+}
+.modal-body p{
+    font-size: 21px;
+    font-weight: 400;
+}
+.detailsModal{
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+.detailsModal i{
+    color:#BB4120;
+
+}
+
+.hrDown{
+    margin-top: 90px;
+    margin-bottom: 25px;
+}
+
+.btnError{
+    background-color: #d1512d !important;
+    padding: 6px 48px !important;
+    border: 0;
+}
+.btnError:hover{
+    background-color: #BB4120 !important;
+    
+}
+
+input{
+    font-weight: 500 !important;
+}
+
+.modal{
+--bs-modal-header-border-color: transparent;
+}
+.btn-close {
+    
+    
+    --bs-btn-close-opacity: 1;
+}
+
+.container{
+    border-bottom: 2px dotted black;
+    border-top: 2px dotted black;
+    padding-bottom: 90px;
+}
+table{
+    
+    width: 90% !important;
+    margin: auto;
+    margin-top: 20px;
+}
+
+@media all and (max-width:800px){
+    .bookmark{
+        width: 95%;
+    }
+    .container{
+        width: 90% !important;
+    }
+}
