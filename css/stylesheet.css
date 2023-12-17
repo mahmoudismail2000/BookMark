@@ -41,6 +41,7 @@ h1{
 
 h2{
     font-size: 25px !important;
+    
 }
 
 hr{
@@ -63,7 +64,6 @@ hr{
     transform: translate(-50%);
     background-clip: text;
     font-size: 25px !important;
-    width: 95%;
     
 }
 
@@ -225,6 +225,10 @@ table{
 }
 
 @media all and (max-width:800px){
+    .bookmark{
+        width: 95%;
+        background-color: transparent;
+    }
     .container{
         width: 90% !important;
     }
