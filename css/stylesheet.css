@@ -64,6 +64,7 @@ hr{
     transform: translate(-50%);
     background-clip: text;
     font-size: 25px !important;
+    -webkit-background-clip: text;
     
 }
 
@@ -227,7 +228,6 @@ table{
 @media all and (max-width:800px){
     .bookmark{
         width: 95%;
-        background-color: transparent !important;
     }
     .container{
         width: 90% !important;
